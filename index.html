@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+<title>Micheal's Web Developer Portfolio</title>
+<link rel="icon" type="image/png" href="./images/icons/icons8-mordhau-64.png"/>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<body class="font-serif text-gray-500 bg-whitesmoke">
+  <div class="flex flex-col min-h-screen bg-[url('./images/background.jpg')] bg-cover bg-center opacity-95 lg:bg-fixed">
+    <header id="home" class="flex flex-col items-center justify-center h-screen text-center">
+      <h1 class="capitalize text-6xl lg:text-7xl font-bold text-white mb-4">h<span class="text-purple-400 lg:text-white">i i'm</span> michael</h1>
+      <p class="text-xl lg:text-2xl text-white mb-8">Web Developer | Cyber Security Expert <span class="text-green-800">| Gamer</span></p>
+      <a href="#about" class="px-6 py-3 bg-[#2E073F] text-[#F5F5F5] font-semibold rounded-full hover:bg-purple-400 hover:text-purple-950 transition lg:b-0">Learn More About Me</a>
+    </header>
+  </div>
+  <nav class="bg-[#2E073F] hover:bg-purple-300 sticky top-0 shadow-md">
+    <ul class="flex justify-center space-x-4 px-20 py-4 items-center md:space-x-8 md:font-medium lg:space-x-12 lg:font-semibold">
+      <li><a href="#home" class="text-white hover:text-purple-950">Home</a></li>
+      <li><a href="#about" class="text-white hover:text-purple-950">About</a></li>
+      <li><a href="#resume" class="text-white hover:text-purple-950">Resume</a></li>
+      <li><a href="#projects" class="text-white hover:text-purple-950">Projects</a></li>
+      <li><a href="#contact" class="text-white hover:text-purple-950">Contact</a></li>
+    </ul>
+  </nav>
+    <section id="about" class="py-16 px-4 bg-purple-100 grid grid-cols-1 gap-8 min-h-[50vh] items-center md:grid-cols-2 lg:grid-cols-2">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4 text-purple-900">About Me</h2>
+            <p class="text-lg text-grey-500">I am a passionate web developer with expertise in creating dynamic and responsive websites. With a strong background in cyber security, I ensure that my projects are not only visually appealing but also secure and reliable. In my free time, I enjoy gaming and exploring new technologies.</p>
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center flex items-center justify-center flex-col gap-6 flex-wrap md:flex-row lg:flex-row">
+            <h2 class="text-4xl font-bold mb-4 text-purple-900 lg:grid lg:grid-cols-1 lg:items-center lg:h-max">Skills:</h2>
+            <img src="./images/icons/icons8-html-5-50.png" alt="HTML 5">
+            <p>HTML 5</p>
+            <img src="./images/icons/icons8-css-50.png" alt="CSS 3">
+            <p>CSS 3</p>
+            <img class="bg-gradient-to-br from-purple-300 via-purple-400 to-indigo-500" src="../images/icons/icons8-flexbox-50.png" alt="Flexbox">
+            <p>Flexbox</p>
+            <img src="./images/icons/icons8-grid-50.png" alt="CSS Grid">
+            <p>CSS Grid</p>
+            <img src="./images/icons/icons8-tailwind-css-50.png" alt="Tailwind CSS">
+            <p>Tailwind CSS</p>
+        </div>
+    </section>
+    <section id="resume" class="py-16 px-4 bg-purple-50 min-h-[50vh]">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 text-purple-900">Resume</h2>
+            <p class="text-lg text-gray-600 mb-8">Download my resume to learn more about my professional experience, skills, and education.</p>
+            <a href="#" class="px-6 py-3 bg-purple-600 text-white font-semibold rounded-full hover:bg-purple-400 hover:text-purple-950 transition" download>Download Resume</a>
+        </div>
+    </section>
+
+
+    <section id="projects" class="py-16 px-4 bg-gray-100 min-h-screen justify-center">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 text-purple-900">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition flex flex-col items-center gap-3">
+                    <h3 class="text-2xl font-semibold mb-4">Project One</h3>
+                    <p class="text-gray-600 mb-4">Testimonial Grid Section project using Tailwind CSS.</p>
+                    <a href="https://l3viath4n-365.github.io/First-tailwindcss-project/" class="text-whitesmoke bg-purple-600 p-4 rounded-full hover:text-white size-fit shadow-md">View Project</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition flex flex-col items-center gap-3">
+                    <h3 class="text-2xl font-semibold mb-4">Project Two</h3>
+                    <p class="text-gray-600 mb-5">A resopnsive bento grid project using Tailwind CSS.</p>
+                    <a href="https://l3viath4n-365.github.io/Bento-Grid/" class="text-whitesmoke hover:text-white bg-purple-600 p-4 rounded-full shadow-md">View Project</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition flex flex-col items-center gap-3">
+                    <h3 class="text-2xl font-semibold mb-4">Project Three</h3>
+                    <p class="text-gray-600 mb-4">My web-developer website project using Tailwind CSS.</p>
+                    <a href="https://l3viath4n-365.github.io/Web-developer-portfolio/" class="text-whitesmoke hover:text-white bg-purple-600 p-4 rounded-full shadow-md">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-20 bg-gradient-to-r from-purple-900 via-purple-600 to-indigo-900 text-white">
+      <div class="max-w-2xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold mb-12">Get In Touch</h2>
+        <p class="text-xl mb-8">Based in Imo State, Nigeria. Let's collaborate on your next project.</p>
+        <div class="space-y-4 text-lg mb-8">
+          <p>Email: michaelekeoma01@gmail.com</p>
+          <p>GitHub: github.com/L3viath4n_365</p>
+        </div>
+        <form class="max-w-md mx-auto space-y-4 ">
+          <input type="text" placeholder="Your Name" class="w-full p-4 rounded-lg text-blue-950 bg-white hover:bg-whitesmoke" required>
+          <input type="email" placeholder="Your Email" class="w-full p-4 rounded-lg text-blue-950 bg-white hover:bg-whitesmoke" required>
+          <textarea placeholder="Your Message" rows="5" class="w-full p-4 rounded-lg text-blue-950 bg-white resize-none hover:bg-whitesmoke" required></textarea>
+          <button type="submit" class="w-full bg-white text-blue-900 py-4 rounded-lg font-semibold hover:text-gray-900 hover:bg-purple-800 transition">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-purple-950 text-white py-8 text-center">
+    <p>&copy; 2025 L3VIATH4N. All rights reserved. Built with Tailwind CSS & semantic HTML.</p>
+  </footer>
+</body>
+</html>
