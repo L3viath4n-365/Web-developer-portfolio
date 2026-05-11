@@ -1,106 +1,257 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L3viath4n // DEV · SEC · GG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="index.js" defer></script>
 </head>
-<title>Micheal's Web Developer Portfolio</title>
-<link rel="icon" type="image/png" href="./images/icons/icons8-mordhau-64.png"/>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-<body class="font-serif text-gray-500 bg-whitesmoke">
-  <div class="flex flex-col min-h-screen bg-[url('./images/background.jpg')] bg-cover bg-center opacity-95 lg:bg-fixed">
-    <header id="home" class="flex flex-col items-center justify-center h-screen text-center">
-      <h1 class="capitalize text-6xl lg:text-7xl font-bold text-white mb-4">h<span class="text-purple-400 lg:text-white">i i'm</span> michael</h1>
-      <p class="text-xl lg:text-2xl text-white mb-8">Web Developer | Cyber Security Expert <span class="text-black lg:text-green-800">| Gamer</span></p>
-      <a href="#about" class="px-6 py-3 bg-[#2E073F] text-[#F5F5F5] font-semibold rounded-full hover:bg-purple-400 hover:text-purple-950 transition lg:b-0">Learn More About Me</a>
-    </header>
-  </div>
-  <nav class="bg-[#2E073F] hover:bg-purple-300 sticky top-0 shadow-md">
-    <ul class="flex justify-center space-x-4 px-20 py-4 items-center md:space-x-8 md:font-medium lg:space-x-12 lg:font-semibold">
-      <li><a href="#home" class="text-white hover:text-purple-950">Home</a></li>
-      <li><a href="#about" class="text-white hover:text-purple-950">About</a></li>
-      <li><a href="#resume" class="text-white hover:text-purple-950">Resume</a></li>
-      <li><a href="#projects" class="text-white hover:text-purple-950">Projects</a></li>
-      <li><a href="#contact" class="text-white hover:text-purple-950">Contact</a></li>
+<body>
+  <nav>
+    <a class="nav-logo" href="#hero">l3viath4n<span>.</span>365<span>//</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-    <section id="about" class="py-16 px-4 bg-purple-100 grid grid-cols-1 gap-8 min-h-[50vh] items-center md:grid-cols-2 lg:grid-cols-2">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-4 text-purple-900">About Me</h2>
-            <p class="text-lg text-grey-500">I am a passionate web developer with expertise in creating dynamic and responsive websites. With a strong background in cyber security, I ensure that my projects are not only visually appealing but also secure and reliable. In my free time, I enjoy gaming and exploring new technologies.</p>
-        </div>
 
-        <div class="max-w-4xl mx-auto text-center flex items-center justify-center flex-col gap-6 flex-wrap md:flex-row lg:flex-row">
-            <h2 class="text-4xl font-bold mb-4 text-purple-900 lg:grid lg:grid-cols-1 lg:items-center lg:h-max">Skills:</h2>
-            <img src="./images/icons/icons8-html-5-50.png" alt="HTML 5">
-            <p>HTML 5</p>
-            <img src="./images/icons/icons8-css-50.png" alt="CSS 3">
-            <p>CSS 3</p>
-            <img class="bg-gradient-to-br from-purple-300 via-purple-400 to-indigo-500" src="./images/icons/icons8-flexbox-50.png" alt="Flexbox">
-            <p>Flexbox</p>
-            <img src="./images/icons/icons8-grid-50.png" alt="CSS Grid">
-            <p>CSS Grid</p>
-            <img src="./images/icons/icons8-tailwind-css-50.png" alt="Tailwind CSS">
-            <p>Tailwind CSS</p>
-        </div>
-    </section>
-    <section id="resume" class="py-16 px-4 bg-purple-50 min-h-[50vh]">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8 text-purple-900">Resume</h2>
-            <p class="text-lg text-gray-600 mb-8">Download my resume to learn more about my professional experience, skills, and education.</p>
-            <a href="#" class="px-6 py-3 bg-purple-600 text-white font-semibold rounded-full hover:bg-purple-400 hover:text-purple-950 transition" download>Download Resume</a>
-        </div>
-    </section>
+  <section id="hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
 
+    <div class="hero-content fade-up visible">
+      <div class="hero-tag">System Online · v2.0.26</div>
 
-    <section id="projects" class="py-16 px-4 bg-gray-100 min-h-screen justify-center">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-8 text-purple-900">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition flex flex-col items-center gap-3">
-                    <h3 class="text-2xl font-semibold mb-4">Project One</h3>
-                    <p class="text-gray-600 mb-4">Testimonial Grid Section project using Tailwind CSS.</p>
-                    <a href="https://l3viath4n-365.github.io/First-tailwindcss-project/" class="text-white bg-purple-600 p-4 rounded-full hover:text-white size-fit shadow-md">View Project</a>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition flex flex-col items-center gap-3">
-                    <h3 class="text-2xl font-semibold mb-4">Project Two</h3>
-                    <p class="text-gray-600 mb-5">A responsive bento grid project using Tailwind CSS.</p>
-                    <a href="https://l3viath4n-365.github.io/Bento-Grid/" class="text-white hover:text-white bg-purple-600 p-4 rounded-full shadow-md">View Project</a>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition flex flex-col items-center gap-3">
-                    <h3 class="text-2xl font-semibold mb-4">Project Three</h3>
-                    <p class="text-gray-600 mb-4">My web-developer website project using Tailwind CSS.</p>
-                    <a href="https://l3viath4n-365.github.io/Web-developer-portfolio/" class="text-white hover:text-white bg-purple-600 p-4 rounded-full shadow-md">View Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact" class="py-20 bg-gradient-to-r from-purple-900 via-purple-600 to-indigo-900 text-white">
-      <div class="max-w-2xl mx-auto px-4 text-center">
-        <h2 class="text-4xl font-bold mb-12">Get In Touch</h2>
-        <p class="text-xl mb-8">Based in Imo State, Nigeria. Let's collaborate on your next project.</p>
-        <div class="space-y-4 text-lg mb-8">
-          <p>Email: michaelekeoma01@gmail.com</p>
-          <p>GitHub: github.com/L3viath4n_365</p>
-        </div>
-        <form class="max-w-md mx-auto space-y-4 ">
-          <input type="text" placeholder="Your Name" class="w-full p-4 rounded-lg text-blue-950 bg-white hover:bg-whitesmoke" required>
-          <input type="email" placeholder="Your Email" class="w-full p-4 rounded-lg text-blue-950 bg-white hover:bg-whitesmoke" required>
-          <textarea placeholder="Your Message" rows="5" class="w-full p-4 rounded-lg text-blue-950 bg-white resize-none hover:bg-whitesmoke" required></textarea>
-          <button type="submit" class="w-full bg-white text-blue-900 py-4 rounded-lg font-semibold hover:text-gray-900 hover:bg-purple-800 transition">Send Message</button>
-        </form>
+      <h1 class="hero-name">
+        Michael<br><span class="accent">Oji</span>
+      </h1>
+
+      <div class="hero-roles">
+        <span class="role-chip dev">⌨ Full-Stack Developer</span>
+        <span class="role-chip sec">🛡 Security Analyst</span>
+        <span class="role-chip game">🎮 Competitive Gamer</span>
       </div>
-    </section>
 
-    <footer class="bg-purple-950 text-white py-8 text-center">
-    <p>&copy; 2025 L3VIATH4N. All rights reserved. Built with Tailwind CSS & semantic HTML.</p>
+      <p class="hero-bio">
+        I <strong>build</strong> robust web systems, <strong>analyze</strong> security vulnerabilities, and <strong>climb leaderboards</strong>. Biochemistry graduate turned tech polymath.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+
+    <div class="hero-status">
+      <span><span class="status-dot"></span>Available for work</span>
+      <span>Uyo, Nigeria</span>
+      <span id="clock">00:00:00</span>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-header fade-up">
+      <span class="section-num"> //</span>
+      <h2 class="section-title">ABOUT</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text fade-up">
+        <p>I am a <strong>Biochemistry graduate</strong> pivoting into the heart of the digital frontier. My background in science gave me the analytical foundation; my passion for technology gave me the tools to build.</p>
+        <p>Currently, I focus on <strong>Full-Stack development</strong> with a heavy emphasis on <strong>Cybersecurity</strong>. I don't just write code; I architect it with a "security-first" mindset, ensuring every deployment is as resilient as it is functional.</p>
+        <p>When the terminal is closed, you'll find me on the global leaderboards of <strong>CODM</strong> or <strong>Rainbow Six Mobile</strong>. Competitive gaming isn't a distraction—it's where I honed the high-pressure decision-making and mechanical precision I bring to every sprint.</p>
+
+        <div class="terminal" style="margin-top:28px;">
+          <div class="terminal-bar">
+            <div class="t-dot r"></div>
+            <div class="t-dot y"></div>
+            <div class="t-dot g"></div>
+            <span class="terminal-title">L3viath4n-365</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line"><span class="t-prompt">$ </span><span class="t-cmd">whoami</span></div>
+            <div class="t-line t-out">Michael Oji: DevSecOps Aspirant</div>
+            <div class="t-line"><span class="t-prompt">$ </span><span class="t-cmd">ls certifications/</span></div>
+            <div class="t-line t-out">CompTIA_Security_Plus (In Progress)</div>
+            <div class="t-line" style="margin-top:8px;"><span class="t-prompt">$ </span><span class="cursor"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-stats fade-up">
+        <div class="stat-card g">
+          <div class="stat-num">12+</div>
+          <div class="stat-label">Web Projects</div>
+        </div>
+        <div class="stat-card c">
+          <div class="stat-num">15-month</div>
+          <div class="stat-label">Career Roadmap</div>
+        </div>
+        <div class="stat-card o">
+          <div class="stat-num">Top</div>
+          <div class="stat-label">Global Leaderboard (CODM)</div>
+        </div>
+        <div class="stat-card p">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Lines of code Written</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-header fade-up">
+      <span class="section-num"> //</span>
+      <h2 class="section-title">SKILLS</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group fade-up">
+        <div class="skill-group-icon">⌨</div>
+        <div class="skill-group-title">Web Development</div>
+        <div class="skill-tags">
+          <span class="tag">HTML5/CSS3</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">JavaScript (ES6+)</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">EJS</span>
+          <span class="tag">Git/GitHub</span>
+          <span class="tag">Version Control</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">SQL</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">OAuth & Authsec</span>
+          <span class="tag">React.js</span>
+        </div>
+      </div>
+
+      <div class="skill-group sec-group fade-up">
+        <div class="skill-group-icon">🛡</div>
+        <div class="skill-group-title">Cybersecurity</div>
+        <div class="skill-tags">
+          <span class="tag">Network Security</span>
+          <span class="tag">OWASP Top 10</span>
+          <span class="tag">Linux SysAdmin</span>
+          <span class="tag">Bash Scripting</span>
+          <span class="tag">Nmap</span>
+          <span class="tag">Wireshark</span>
+        </div>
+      </div>
+
+      <div class="skill-group game-group fade-up">
+        <div class="skill-group-icon">🎮</div>
+        <div class="skill-group-title">Gaming & Tools</div>
+        <div class="skill-tags">
+          <span class="tag">OBS Studio</span>
+          <span class="tag">Python</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Git/GitHub</span>
+          <span class="tag">Hardware Optimization</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-header fade-up">
+      <span class="section-num"> //</span>
+      <h2 class="section-title">PROJECTS</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card fade-up">
+        <div class="project-type dev">⌨ Brand Identity</div>
+        <div class="project-title">Leviathan Gaming</div>
+        <p class="project-desc">Developing a comprehensive gaming and streaming brand. Focused on high-fidelity content creation and community building within the mobile FPS scene.</p>
+        <div class="project-stack">
+          <span class="tag">Branding</span>
+          <span class="tag">Content Strategy</span>
+          <span class="tag">Streaming Gear</span>
+        </div>
+      </div>
+
+      <div class="project-card sec-card fade-up">
+        <div class="project-type sec">🛡 Automation</div>
+        <div class="project-title">Stack Sentinel</div>
+        <p class="project-desc">A YouTube automation initiative focused on tech-stacks, security insights, and developer workflows. Bridging the gap between coding and security education.</p>
+        <div class="project-stack">
+          <span class="tag">Python</span>
+          <span class="tag">Video Engineering</span>
+          <span class="tag">SEO</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-up">
+        <div class="project-type dev">⌨ Web Dev</div>
+        <div class="project-title">Portfolio v2</div>
+        <p class="project-desc">A minimalist, terminal-themed portfolio designed for speed and responsiveness. Built with clean, vanilla code to showcase front-end fundamentals.</p>
+        <div class="project-stack">
+          <span class="tag">HTML</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/L3viath4n-365">→ GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-header fade-up">
+      <span class="section-num"> //</span>
+      <h2 class="section-title">EXPERIENCE</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item fade-up">
+        <div class="timeline-date">2024 — PRESENT</div>
+        <div class="timeline-role">Self-Directed Technical Training</div>
+        <div class="timeline-company">Full-Stack Web development & cyberSecurity Focus</div>
+        <p class="timeline-desc">Executing a 15-month roadmap covering CompTIA Security+ prep and deep-dives into web development with Node.js/Express and React. Building a portfolio of 10+ scalable web applications.</p>
+      </div>
+
+      <div class="timeline-item fade-up">
+        <div class="timeline-date">2024</div>
+        <div class="timeline-role">Biochemistry Graduate</div>
+        <div class="timeline-company">Gregory University, Uturu, Abia State, Nigeria</div>
+        <p class="timeline-desc">Applied scientific methodology to complex problem-solving. Transitioned analytical skills from laboratory research to digital systems and security analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-inner fade-up">
+      <h2 class="contact-heading">Let's<br><span class="accent">Connect.</span></h2>
+      <p class="contact-sub">Open to work, collabs, and high-tier gaming sessions. Based in Uyo, Nigeria.</p>
+
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:michaelekeoma01@gmail.com">✉ Email</a>
+        <a class="contact-link" href="https://github.com/L3viath4n-365" target="_blank" rel="noopener">⌥ GitHub</a>
+        <a class="contact-link" href="https://linkedin.com/in/michael-oji-90525a374/" target="_blank" rel="noopener">◈ LinkedIn</a>
+      </div>
+
+      <a href="Michael's resume.pdf" class="btn btn-primary" download>↓ Download Resume</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 <a href="https://github.com/L3viath4n-365">L3viath4n-365</a> — built with ☕ & back pain</p>
+    <p class="footer-right">DEV · SEC · GG</p>
   </footer>
 </body>
 </html>
-
-
-
-
-
