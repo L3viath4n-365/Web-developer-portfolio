@@ -23,10 +23,10 @@ $(".skills-grid, .projects-grid, .about-stats").each(function(index, grid) {
     });
 });
 
-$(".skill-group:first").click(function() { 
-  window.open = "https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12384214#overview";
-});
+$(".skill-group:first").on("vclick", (function() { 
+  window.open("https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12384214#overview");
+}));
 
-$(".sec-group").click(function(){
-  window.open = "https://www.udemy.com/course/learn-python-and-ethical-hacking-from-scratch/?couponCode=KEEPLEARNING"
-})
+$(".sec-group").on("vclick", (function(){
+  window.open("https://www.udemy.com/course/learn-python-and-ethical-hacking-from-scratch/?couponCode=KEEPLEARNING");
+}));
