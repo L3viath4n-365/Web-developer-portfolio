@@ -1,3 +1,16 @@
+/*
+  Put your own page-specific CSS here.
+
+  assets/style.css (site-wide) gives you the dark/light theme, fonts,
+  colors, and the .card/.pill/.btn building blocks for free — this file
+  is where YOU add anything custom to your own page. It's only ever
+  loaded by your index.html, so nothing you write here can affect
+  anyone else's page or the main directory grid.
+
+  Want an example of this in use? See contributors/talen/styles.css —
+  feel free to copy any of it.
+*/
+
 :root {
   --bg:        #020509;
   --bg2:       #060d14;
@@ -524,9 +537,19 @@ section { padding: 100px 48px; }
   letter-spacing: 1px;
   color: var(--muted);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.2s, text-decoration 0.2s; /* Added text-decoration transition */
 }
-.project-links a:hover { color: var(--green); }
+
+.project-links a:hover { 
+  color: var(--green); 
+}
+
+/* ADD THIS - Focus state with underline */
+.project-links a:focus {
+  text-decoration: underline;
+  color: var(--green); /* Optional: also change color on focus */
+  outline: none; /* Optional: removes default focus outline */
+}
 
 /* EXPERIENCE */
 .timeline {
@@ -665,6 +688,7 @@ footer .footer-right { color: var(--green); }
   font-family: var(--font-mono);
   font-size: 13px;
   line-height: 1.8;
+  margin-top: 28px;
 }
 .terminal-bar {
   background: #0a1520;
@@ -691,6 +715,8 @@ footer .footer-right { color: var(--green); }
 .t-out    { color: var(--muted); }
 .t-key    { color: var(--cyan); }
 .t-val    { color: var(--orange); }
+
+.terminal-body div:nth-of-child(4) { margin-top: 0; }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
